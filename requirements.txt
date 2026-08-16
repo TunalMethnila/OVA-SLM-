@@ -1,0 +1,11 @@
+# LEAFv5 SLM — minimal requirements.
+# torch must be installed with CUDA on the training machine:
+#   pip install torch --index-url https://download.pytorch.org/whl/cu121   (T4 / CUDA 12.1)
+torch>=2.1
+numpy>=1.24
+# byte-level BPE tokenizer training (used once per corpus, then cached)
+tokenizers>=0.15
+# GigaToken: Rust tokenizer at GB/s with exact HF parity.  Speeds up corpus
+# encoding ~50-1000x (TinyStories: minutes -> seconds).  Optional but
+# recommended: without it the pipeline falls back to HuggingFace tokenizers.
+gigatoken>=0.9
