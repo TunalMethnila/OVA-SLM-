@@ -1,0 +1,1 @@
+{"tokenizer": {"mode": "bpe", "dir": "/home/user/leafv5-slm/data_gen/finetune_cache/tokenizer", "vocab_size": 635, "engine": "hf"}, "n_tokens": 2751, "n_train": 2751, "n_val": 0}
